@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E278A8E0-D14B-49F7-A8D4-2442A6FB2FC9}</ProjectGuid>
+    <RootNamespace>SimpleDataProject</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\bin;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1\build\Debug;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>
+    </LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.a;libcurl.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\easyloggingpp-master\src;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\crossguid-master\include;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1\build\include;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <PreprocessorDefinitions>_HAS_ITERATOR_DEBUGGING=0;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\easyloggingpp-master\build\Debug;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\lib;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1\build\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.a;libcurl.dll.a;json-c.lib;easyloggingpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.a;libcurl.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\easyloggingpp-master\src;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\crossguid-master\include;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1\build\include;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\easyloggingpp-master\build\Release;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\curl-7.58.0-win64-mingw\lib;C:\Users\Matt\Documents\Visual Studio 2015\Projects\ThirdParty\json-c-0.13.1\build\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.a;libcurl.dll.a;json-c.lib;easyloggingpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aiagent.cpp" />
+    <ClCompile Include="aiManager.cpp" />
+    <ClCompile Include="armor.cpp" />
+    <ClCompile Include="armorFactory.cpp" />
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="characterFactory.cpp" />
+    <ClCompile Include="combatManager.cpp" />
+    <ClCompile Include="combatResult.cpp" />
+    <ClCompile Include="damageManager.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="hack_notes.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="spell.cpp" />
+    <ClCompile Include="spellComponent.cpp" />
+    <ClCompile Include="spellFactory.cpp" />
+    <ClCompile Include="spellManager.cpp" />
+    <ClCompile Include="statcontainer.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="weapon.cpp" />
+    <ClCompile Include="weaponFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aiagent.h" />
+    <ClInclude Include="aiManager.h" />
+    <ClInclude Include="armor.h" />
+    <ClInclude Include="armorFactory.h" />
+    <ClInclude Include="character.h" />
+    <ClInclude Include="characterFactory.h" />
+    <ClInclude Include="combatManager.h" />
+    <ClInclude Include="combatResult.h" />
+    <ClInclude Include="damageManager.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="optionparser.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="spell.h" />
+    <ClInclude Include="spellComponent.h" />
+    <ClInclude Include="spellFactory.h" />
+    <ClInclude Include="spellManager.h" />
+    <ClInclude Include="statcontainer.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="weapon.h" />
+    <ClInclude Include="weaponFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ThirdParty\crossguid-master\build\crossguid.vcxproj">
+      <Project>{0f694c76-4dd4-3a2e-82d8-fb0c5d41ff4a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ThirdParty\json-c-0.13.1\build\json-c.vcxproj">
+      <Project>{bda06050-39dd-48d6-98b5-6133faad310a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimpleDataProject.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LoggingConfig.conf" />
+    <Text Include="ToDo.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="combatLog.conf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
